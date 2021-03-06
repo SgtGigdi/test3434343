@@ -1,18 +1,81 @@
-![VoxelSrv](https://i.imgur.com/FuXKPpw.png)
-# VoxelSrv
-VoxelSrv is a voxel game inspired by Minecraft, where you can build, mine and ~~craft~~ (not implemented yet).
-This game is still in early development, so many features might be not implemented yet!
-It support Singleplayer and Multiplayer (requires hosting own server).
+# web-minecraft
 
-If you are interested with the project checkout our Discord server!
+[![Join the chat at https://gitter.im/web-minecraft/community](https://badges.gitter.im/web-minecraft/community.svg)](https://gitter.im/web-minecraft/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Discord](https://img.shields.io/badge/chat-on%20discord-brightgreen.svg)](https://discord.gg/h6DQzDx2G7)
 
-- [Discord](https://discord.gg/K9PdsDh)
-- [Website](https://voxelsrv.pb4.eu)
+## About
 
-If you want to create a server, you should check this repo: https://github.com/VoxelSrv/voxelsrv-server
+**Web-minecraft is minecraft client written in Javascript.** From web browser this client connects to node.js server and then to real minecraft server, so you can play minecraft in the browser.
 
-# [Play it here](http://voxelsrv-master.pb4.eu)
+## Instructions
 
-# Assets used in this project (graphics/sounds):
-- Pixel Perfection Community Edition (https://github.com/Athemis/PixelPerfectionCE)
-- Models by ewanhowell5195 (https://www.curseforge.com/minecraft/texture-packs/template-cem)
+<details>
+<summary>Install locally</summary>
+
+```bash
+git clone https://github.com/michaljaz/web-minecraft
+cd web-minecraft
+npm i
+
+```
+
+</details>
+
+<details>
+<summary>Minecraft server setup</summary>
+To run this game you need to start real minecraft server (by default it is 1.16.5 offline mode java edition on ip localhost:25565).
+
+</details>
+
+<details>
+<summary>Minecraft premium support</summary>
+You can add premium=true parameter to url for premium, it will open a prompt, write password and tada.
+
+</details>
+
+<details>
+<summary>Linting</summary>
+
+```bash
+#Only show whats wrong
+npm run lint
+
+#Fix what is wrong
+npm run lint:fix
+
+```
+
+</details>
+
+<details>
+<summary>Development setup </summary>
+
+```bash
+#Start node server with webpack middleware
+npm run dev
+
+```
+
+</details>
+<details>
+<summary>Production setup</summary>
+
+```bash
+#Cleaning dist folder (old game bundles)
+npm run clean
+
+#Building app bundle
+npm run build
+
+#Start node server and serve bundle files
+npm start
+
+```
+
+</details>
+
+## Screenshots
+
+[<img src="https://i.ibb.co/bPh99MV/hypixel.png" alt="screen6" width="100%">](https://i.ibb.co/bPh99MV/hypixel.png)
+[<img src="https://i.ibb.co/jzZVrT2/Screenshot-from-2021-01-27-21-13-37.png" alt="screen6" width="100%">](https://i.ibb.co/jzZVrT2/Screenshot-from-2021-01-27-21-13-37.png)
+[<img src="https://i.ibb.co/tKmnJ8D/Screenshot-from-2021-01-27-21-16-12.png" alt="screen6" width="100%">](https://i.ibb.co/tKmnJ8D/Screenshot-from-2021-01-27-21-16-12.png)

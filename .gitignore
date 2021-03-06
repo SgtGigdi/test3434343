@@ -1,16 +1,7 @@
 node_modules
-docs/textures/Base
-build
+src/client/dist
+src/client/assets/blocks
+src/client/assets/items
+src/assets/pack
 
-
-Thumbs.db
-ehthumbs.db
-*.cab
-*.msi
-*.msm
-*.msp
-*_ignore
-$RECYCLE.BIN/
-Desktop.ini
-*~
-*~
+yarn.lock
