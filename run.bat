@@ -1,1 +1,1 @@
-prismarine-web-client
+npm i

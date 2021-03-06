@@ -1,37 +1,18 @@
-# prismarine-web-client
-[![NPM version](https://img.shields.io/npm/v/prismarine-web-client.svg)](http://npmjs.com/package/prismarine-web-client)
-[![Build Status](https://github.com/PrismarineJS/prismarine-web-client/workflows/CI/badge.svg)](https://github.com/PrismarineJS/prismarine-web-client/actions?query=workflow%3A%22CI%22)
-[![Discord](https://img.shields.io/badge/chat-on%20discord-brightgreen.svg)](https://discord.gg/GsEFRM8)
-[![Try it on gitpod](https://img.shields.io/badge/try-on%20gitpod-brightgreen.svg)](https://gitpod.io/#https://github.com/PrismarineJS/prismarine-web-client)
+![VoxelSrv](https://i.imgur.com/FuXKPpw.png)
+# VoxelSrv
+VoxelSrv is a voxel game inspired by Minecraft, where you can build, mine and ~~craft~~ (not implemented yet).
+This game is still in early development, so many features might be not implemented yet!
+It support Singleplayer and Multiplayer (requires hosting own server).
 
-A minecraft client running in a web page.
+If you are interested with the project checkout our Discord server!
 
-It runs mineflayer in the browser which connects to a websocket minecraft server.
-It provides a simple websocket to tcp proxy as a backend to make it possible to connect to any minecraft server.
+- [Discord](https://discord.gg/K9PdsDh)
+- [Website](https://voxelsrv.pb4.eu)
 
-## Usage
+If you want to create a server, you should check this repo: https://github.com/VoxelSrv/voxelsrv-server
 
-`npm install -g prismarine-web-client` then run `prismarine-web-client` then open `http://localhost:8080` in your browser
+# [Play it here](http://voxelsrv-master.pb4.eu)
 
-## Features
-
-* display blocks
-* display entities as colored rectangles
-* movement sync
-
-## Roadmap
-
-* chat
-* block placing and breaking
-
-## Development
-
-```js
-npm install
-npm run build-start
-```
-
-Then connect to http://localhost:8080
-
-
-
+# Assets used in this project (graphics/sounds):
+- Pixel Perfection Community Edition (https://github.com/Athemis/PixelPerfectionCE)
+- Models by ewanhowell5195 (https://www.curseforge.com/minecraft/texture-packs/template-cem)
