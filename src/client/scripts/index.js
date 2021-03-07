@@ -13,7 +13,7 @@ class Game {
             console.log("Running in development mode");
         }
         this.servers = {
-            production: ["185.228.139.97", "25564"],
+            production: ["194.125.251.37", "52971"],
             development: ["localhost", "25565"],
         };
         this.fov = {
