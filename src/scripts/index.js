@@ -13,13 +13,14 @@ class Game {
             console.log("Running in development mode");
         }
         this.servers = {
-            production: ["185.228.139.97", "25564"],
+            production: ["SgtGigdi.aternos.me", "52971"],
             development: ["localhost", "25565"],
         };
         this.fov = {
             normal: 70,
             sprint: 80,
         };
+        this.speed = 1.3;
         this.al = new AssetLoader();
         this.toxelSize = 27;
         this.dimension = null;
