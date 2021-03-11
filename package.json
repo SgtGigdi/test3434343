@@ -1,21 +1,34 @@
 {
     "name": "web-minecraft",
     "version": "1.0.0",
+    "description": "Minecraft client written in Javascript",
     "scripts": {
         "start": "node index.js production",
         "dev": "npm run prebuild && node index.js development",
-        "build": "cd src/client && webpack --config webpack.prod.js",
-        "prebuild": "node src/prebuild.js",
-        "clean": "rimraf src/client/dist/*",
-        "lint": "eslint src/",
-        "lint:fix": "eslint --fix src/",
-        "postinstall": "node src/postinstall.js"
+        "build": "cd src && webpack --config webpack.prod.js",
+        "prebuild": "node lib/prebuild.js",
+        "clean": "rimraf src/dist/*",
+        "lint": "eslint index.js lib/ src/webpack* src/scripts/",
+        "lint:fix": "eslint --fix index.js lib/ src/webpack* src/scripts/",
+        "postinstall": "node lib/postinstall.js"
     },
     "husky": {
         "hooks": {
             "pre-commit": "npm run lint:fix"
         }
     },
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/michaljaz/web-minecraft.git"
+    },
+    "keywords": [
+        "minecraft",
+        "game",
+        "browser",
+        "mineflayer",
+        "threejs"
+    ],
     "dependencies": {
         "@msgpack/msgpack": "^2.4.1",
         "@tweenjs/tween.js": "^18.6.4",
@@ -30,7 +43,6 @@
         "html-webpack-plugin": "^4.5.1",
         "http": "0.0.1-security",
         "jquery": "^3.5.1",
-        "jssoup": "0.0.12",
         "lodash-webpack-plugin": "^0.11.6",
         "mineflayer": "^3.0.0",
         "node": "^14.15.2",
@@ -38,7 +50,6 @@
         "popper.js": "^1.16.1",
         "prismarine-block": "^1.7.3",
         "prismarine-chunk": "^1.22.0",
-        "replace-color": "^2.3.0",
         "rimraf": "^3.0.2",
         "stats-js": "^1.0.1",
         "sweetalert": "^2.1.2",
@@ -50,7 +61,6 @@
         "ws": "^7.4.3"
     },
     "devDependencies": {
-        "autoprefixer": "^9.0.0",
         "copy-webpack-plugin": "^6.3.1",
         "css-loader": "^5.0.1",
         "eslint": "^7.20.0",
@@ -59,7 +69,6 @@
         "file-loader": "^6.2.0",
         "husky": "^1.0.0-rc.13",
         "node-sass": "^5.0.0",
-        "postcss-loader": "^3.0.0",
         "prettier": "^2.2.1",
         "sass-loader": "^10.1.1",
         "style-loader": "^2.0.0",
