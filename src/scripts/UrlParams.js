@@ -173,6 +173,7 @@ const UrlParams = function (game, cb) {
         "Boy",
         "Girl",
         "Vortex",
+        "SgtGigdi",
         "Paradox",
     ];
     let finalName = "";
